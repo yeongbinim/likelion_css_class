@@ -27,7 +27,7 @@ flex는 두가지만 이해하면 된다.
 
 - **justify-content** : 주 축의 <u>정렬</u> 방법을 설정한다.(default: flex-start)
 
-  값 : flex-start, flex-end, center, space-between*(시작 item은 시작점(flex-start)에, 마지막 item은 끝점(flex-end)에 정렬되고 나머지는 고르게 정렬(**왼쪽 오른쪽 붙어있음**))*, space-around*(Items를 균등한 여백을 포함하여 정렬(**왼쪽 오른쪽에 여백**))*
+  값 : flex-start, flex-end, center, space-between *(시작 item은 시작점(flex-start)에, 마지막 item은 끝점(flex-end)에 정렬되고 나머지는 고르게 정렬(**왼쪽 오른쪽 붙어있음**))*, space-around *(Items를 균등한 여백을 포함하여 정렬(**왼쪽 오른쪽에 여백**))*
 
 - **align-content** : 교차 축의 정렬 방법 설정한다.(flex-wrap속성을 통해 item들이 2줄 이상이고 여백이 있을 경우에만 사용가능)(default: stretch)
 
