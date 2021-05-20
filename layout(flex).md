@@ -33,7 +33,7 @@ flex는 두가지만 이해하면 된다.
 
   값 : stretch(Container의 교차축을 채우기 위해 item들을 늘림), flex-start, flex-end, center, space-between, space-around
 
-- **align-items ** : 교차 축에서 Items의 정렬 방법을 설정한다. align-content와는 달리 한 줄에 대한 정렬방법이기에 여러 줄에서 사용할 때에는 align-content가 우선 적용되므로 align-content는 default(stretch) 가 적용되어야 한다. (default: stretch)
+- **align-items** : 교차 축에서 Items의 정렬 방법을 설정한다. align-content와는 달리 한 줄에 대한 정렬방법이기에 여러 줄에서 사용할 때에는 align-content가 우선 적용되므로 align-content는 default(stretch) 가 적용되어야 한다. (default: stretch)
 
   값 : stretch, flex-start, flex-end, center, baseline(문자열을 기준으로 정렬된다.)
 
