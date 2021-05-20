@@ -45,7 +45,7 @@ flex는 두가지만 이해하면 된다.
 
   값 : 숫자
 
-- **flex **
+- **flex**
 
   - **flex-grow** : container가 증가할 때 Item의 증가 너비 비율 설정한다. (이 값이 들어간 것만 증가한다.) (default:0)
 
