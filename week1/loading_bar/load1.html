@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.loader{
+			position: absolute;
+			transform: translate(-50%,-50%);
+			top: 50%;
+			left: 50%;
+		}
+		.loader > .circle {
+			width: 60px;
+			height: 60px;
+			border: 0.8rem solid #ffe7e7;
+			border-radius: 50%;
+			border-top: 0.8rem solid #e05247;
+			animation: spin 1s linear infinite;
+		}
+		@keyframes spin {
+			0% { transform: rotate(0deg); }
+			100% { transform: rotate(360deg); }
+		}
+
+	</style>
+</head>
+<body>
+	<div class="loader">
+		<div class="circle"></div>
+	</div>
+</body>
+</html>
