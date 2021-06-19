@@ -1,0 +1,119 @@
+/*container*/
+.direct{
+	background-color: #ffffff;
+	border: 1px solid var(--color-border);
+	display: flex;
+	border-radius: 3px;
+	overflow: hidden;
+	max-width: var(--max-size);
+	width : 100%;
+	margin : 2vh auto;
+	height: calc(96vh - 55px);
+}
+@media (max-width:900px){
+	.direct{
+		margin : 0 auto;
+		border: none;
+		height: calc(100vh - 55px);
+	}
+}
+
+/*layout*/
+.direct-item{
+	height: 100%;
+}
+.direct-item:first-child{
+	width:320px;
+	border-right: 1px solid var(--color-border);
+}
+.direct-item:last-child{
+	width:calc(100% - 320px);
+}
+
+
+/*name_box*/
+.name_box{
+	border-bottom:1px solid var(--color-border);
+	padding:2rem;
+	font-size: 1.6rem;
+	font-weight: 600;
+	text-align: center;
+	position: relative;;
+}
+.name_box > span{
+	cursor: pointer;
+}
+.name_box > span::after{
+	content: "";
+	display: inline-block;
+	position: relative;
+	left:1rem;
+	bottom:0.2rem;
+	width : 8px;
+	height: 8px;
+	border-bottom: 1px solid gray;
+	border-left: 1px solid gray;
+	transform: rotate(-45deg);
+}
+.name_box > svg{
+	position: absolute;
+	top:50%;
+	right:2rem;
+	transform: translate(0,-50%);
+	cursor: pointer;
+}
+
+/*message_box*/
+.message_box{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.message_box > *{
+	margin-bottom: 1rem;
+}
+.message_box > i{
+	display: inline-block;
+	font-size: 5.2rem;
+	padding:2rem;
+	border: 3px solid #2e2e2e;
+	color:#2e2e2e;
+	border-radius: 100%;
+}
+.message_box > h4{
+	font-size: 2.4rem;
+	font-weight: 500;
+	color:gray;
+}
+.message_box > span{
+	font-size: 1.5rem;
+	color:gray;
+}
+.message_box > button{
+	padding:1rem;
+	color:white;
+	background-color:#3e98e2;
+	border: none;
+	border-radius: 0.5rem;
+	cursor:pointer;
+}
+.message_box > button:hover{
+	opacity: 0.8;
+}
+
+/*friend_box*/
+.friend_box .profile_box{
+	padding:1rem;
+	font-size: 1.5rem;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+.friend_box .profile_box:hover{
+	background-color: #f0f0f0;
+}
+.friend_box .profile_box > span{
+	margin-left: 1rem;
+}

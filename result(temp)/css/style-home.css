@@ -1,0 +1,191 @@
+	/*first*/
+	section.home {
+		width: 100%;
+		max-width: var(--max-size);
+		margin: 0 auto;
+		display: flex;
+		position: relative;
+	}
+
+	section.home a {
+		text-decoration: none;
+	}
+
+	section.home li {
+		list-style: none;
+	}
+
+
+	.home>article {
+		width: 100%;
+		margin: 0 auto;
+		max-width: 600px;
+	}
+
+	.home>footer {
+		position: sticky;
+		width: 300px;
+		height: max-content;
+		padding: 2rem;
+		top: 8rem;
+	}
+
+	.footer_profile {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.footer_profile span {
+		font-size: 1.3rem;
+	}
+
+	.footer_profile>a {
+		font-size: 1.3rem;
+		color: #2b9ee1;
+	}
+
+	.footer_card .profile_box {
+		width: max-content;
+		display: flex;
+		align-items: center;
+		margin: 1rem 0;
+	}
+
+	.footer_card .profile_box span {
+		margin-left: 1rem;
+	}
+
+	.reference_box ul {
+		width: fit-content;
+		padding-top: 1rem;
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 auto;
+	}
+
+	.reference_box li {
+		font-size: 1.1rem;
+		margin-right: 0.5rem;
+	}
+
+	.reference_box li>a {
+		color: gray;
+	}
+
+	/*card*/
+	.card {
+		background-color: #fff;
+		border: 1px solid var(--color-border);
+		border-radius: 3px;
+		margin-top: 3rem;
+	}
+
+	.sub_card {
+		padding: 2rem;
+		font-size: 1.6rem;
+		display: flex;
+		overflow-x: scroll;
+	}
+
+	.sub_card span {
+		font-size: 1.4rem;
+	}
+
+	.sub_card .profile_box {
+		width: max-content;
+		text-align: center;
+		margin-right: 1em;
+	}
+
+	.main_card {
+		margin-bottom: 3rem;
+	}
+
+	.main_card .profile_box {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		padding: 1rem;
+	}
+
+	.main_card span {
+		font-size: 1.6rem;
+		margin-left: 1rem;
+	}
+
+	.main_card .icon_box {
+		padding: 1rem;
+		font-size: 2.5rem;
+	}
+
+	.main_card .ment_box {
+		display: flex;
+		flex-direction: column;
+		padding: 1rem;
+	}
+
+	.main_card .comment_box {
+		border-top: 1px solid var(--color-border);
+		padding: 2rem;
+		display: flex;
+		align-items: center;
+	}
+
+	.comment_box input {
+		border: none;
+		outline: none;
+		background: none;
+		margin-left: 1rem;
+		width: 100%;
+	}
+
+	/*people*/
+	.img_profile {
+		width: 4em;
+		height: 4em;
+		padding: 0.2rem;
+	}
+
+	.img_profile>img {
+		width: 100%;
+		height: 100%;
+		border-radius: 100%;
+		border: 0.5px solid var(--color-border);
+	}
+
+	.img_profile.active {
+		border: 2px solid #dc337c;
+		border-radius: 100%;
+	}
+
+
+	@media(max-width:900px) {
+		.home {
+			flex-direction: column;
+		}
+
+		.home>footer {
+			position: static;
+			width: 100%;
+			text-align: center;
+		}
+
+		.footer_card {
+			display: none;
+		}
+
+		/*나중에*/
+		.card {
+			margin-top: 0;
+		}
+
+		.main_card {
+			background: none;
+			border: none;
+		}
+
+		.main_card .comment_box {
+			display: none;
+		}
+	}
